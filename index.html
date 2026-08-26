@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SenacRS</title>
+  <title>TGT: Simulador de Viagens Aéreas</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/forms_styles.css">
 </head>
 
 <body id="body">
@@ -95,6 +96,1048 @@
   <script>window.escondeModalIndex = function () {
       console.log('clique index.html');
     };</script>
+
+    <div class="wrapper">
+        <div class="tarjetaContainer w-100 h-100">
+            <div id="tarjeta" class="tarjeta">
+                <div class="tooltip tooltip-1">
+
+                </div>
+                <div class="tooltip tooltip-2">
+
+                </div>
+                <h4 class="text-center">Bolivia</h4>
+                <h5 class="text-center">Tarjeta de Migración - Mercosur</h5>
+                <h5 class="text-center" style="font-weight: lighter;"><i>Mercosur Inmigration Card</i></h5>
+
+                <label><b>1. APELLIDO(S)</b> - <i>SURNAMES</i></label>
+                <input type="text" name="0_APELLIDO" class="" title="" value="dos Santos Silva" />
+
+                <label><b>2. NOMBRE(S)</b> - <i>NAMES</i></label>
+                <input type="text" name="1_NOMBRE" class="" title="" value="João" />
+
+                <label><b>3. NACIONALIDAD</b> - <i>NATIONALITY</i></label>
+                <input type="text" name="2_NACIONALIDAD" class="" title="" value="Brasileiro" />
+
+                <div class="row">
+                    <div class="col-6">
+                        <label><b>4. FECHA DE NACIMIENTO</b> - <i>DATE OF BIRTH</i></label>
+                        <input name="3_FECHA" type="date" value="1990-03-25" />
+                    </div>
+                    <div class="col-2">
+                        <label><b>SEXO</b> - <i>SEX</i></label>
+                        <div class="flex">
+                            <b>M</b> <input type="radio" name="4_SEXO" checked="true" value="M"> <b>F</b> <input
+                                type="radio" name="4_SEXO" id="" value="f">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label><b>LUGAR DE NACIMIENTO</b> - <i>PLACE OF BIRTH</i></label>
+                        <input name="5_LUGAR" type="text" value="Porto Alegre, Brasil" />
+                    </div>
+                    <div class="col-6">
+                        <label><b>5. OCUPACIÓN O PROFESIÓN </b> - <i>OCCUPATION</i></label>
+                        <input name="6_OCUPACION" type="text" value="Guia de Turismo" />
+                    </div>
+                    <div class="col-6">
+                        <label><b>6. TIPO DE DOCUMENTO </b> - <i>TYPE OF DOCUMENT</i></label>
+                        <input name="7_DOCUMENTO" type="text" value="ID" />
+                    </div>
+                    <div class="col-6">
+                        <div class="flex column">
+                            <label><b>No. </b> - <i> No.</i></label>
+                            <input name="8_No" type="text" disabled value="1730454856" />
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label><b>7. PUERTO DE SALIDA</b> - <i>DEPARTURE PORT</i></label>
+                        <input class="" name="9_SALIDA" type="text" value="São Paulo, Brasil" />
+                    </div>
+                    <div class="col-6">
+                        <label><b>8. PUERTO DE LLEGADA</b> - <i>ARRIVAL PORT</i></label>
+                        <input class="" name="10_LLEGADA" type="text" value="Bolívia" />
+                    </div>
+                    <div class="col-8 mw-8">
+                        <label><b>9. TIPO DE TRANSPORTE</b> - <i>TYPE<br> OF TRANSPORTATION</i></label>
+                        <div class="specialLabel-container">
+                            <span class="specialLabel"><b>AÉREO</b><i>BY AIR</i><input type="radio" name="11_TRANSPORTE"
+                                    value="AÉREO - BY AIR" checked="true" /></span>
+                            <span class="specialLabel"><b>MARITIMO/FLUVIAL</b><i>BY SEA/RIVER</i><input type="radio"
+                                    name="11_TRANSPORTE" value="MARITIMO/FLUVIAL - BY SEA/RIVER" /></span>
+                            <span class="specialLabel"><b>TERRESTRE</b><i>BY MOTORVEHICLE</i><input type="radio"
+                                    name="11_TRANSPORTE" value="TERRESTRE - BY MOTORVEHICLE" /></span>
+                        </div>
+                    </div>
+                    <div class="col-4 mw-4">
+                        <label><b>10. NOMBRE DEL TRANSPORTADOR (NÚMERO)</b> - <i>CARRIER (NUMBER)</i></label>
+                        <input name="12_CARRIER" type="text" value="0030455072" />
+                    </div>
+                </div>
+                <label><b>11. TIPO DE ALOJAMIENTO (Especifque) </b> - <i>TYPE OF LODGING (Specify)</i></label>
+                <div class="row">
+                    <div class="col-8 d-flex justify-content-around align-items-center">
+                        <span class="specialLabel"><b>HOTEL</b><i>HOTEL</i></span><input type="radio"
+                            name="13_ALOJAMIENTO" value="HOTEL - HOTEL" checked="true" />
+                        <span class="specialLabel"><b>CASA DE<br> HOSPEDAJE</b><i> </i></span><input type="radio"
+                            name="13_ALOJAMIENTO" value="CASA DE HOSPEDAJE" />
+                        <span class="specialLabel"><b>OTRO</b><i>OTHER</i></span><input type="radio"
+                            name="13_ALOJAMIENTO" value="OTRO - OTHER" />
+                    </div>
+                    <div class="col-4  d-flex align-items-center">
+                        <input type="text" name="13_ALOJAMIENTO_OTRO" id="" value="">
+                    </div>
+                </div>
+                <label><b>12. PAÍS DONDE VIVE</b> - <i>COUNTRY OF PERMANENT RESIDENCE</i></label>
+                <input name="14_VIVE" type="text" value="Brasil" />
+                <label><b>13. DIRECCIÓN COMPLETA EN BOLIVIA</b> - <i>FULL ADDRESS IN BOLIVIA</i></label>
+                <input type="text" name="15_DIRECCION" value="Av. Las Ramblas, 172" />
+                <label><b>14. MOTIVOS DEL VIAJE</b> - <i>PURPOSE OF JOURNEY</i></label>
+                <div class="row">
+                    <div class="col-8 w-50">
+                        <span class="specialLabel"><b>TURISMO</b><i>TOURISM</i></span><input type="radio" checked="true"
+                            name="16_MOTIVOS" value="TURISMO - TOURISM" />
+                        <span class="specialLabel"><b>NEGOCIOS</b><i>BUSINESS</i></span><input type="radio"
+                            name="16_MOTIVOS" value="NEGOCIOS - BUSINESS" />
+                        <span class="specialLabel"><b>EVENTOS</b><i>EVENTS</i></span><input type="radio"
+                            name="16_MOTIVOS" value="EVENTOS - EVENTS" />
+                        <span class="specialLabel"><b>ESTUDIOS</b><i>STUDIES</i></span><input type="radio"
+                            name="16_MOTIVOS" value="ESTUDIOS - STUDIES" />
+                        <span class="specialLabel"><b>OTROS</b><i>OTHERS</i></span><input type="radio" name="16_MOTIVOS"
+                            value="OTROS - OTHERS" />
+                    </div>
+                    <div class="col-4  d-flex align-items-center">
+                        <input type="text" name="16_MOTIVOS_OTROS" value="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label><b>15. TIPO DE VISA </b> - <br><i>TYPE OF VISA</i></label>
+                        <input type="text" name="17_VISA" value="Turismo" />
+                    </div>
+                    <div class="col-6">
+                        <label><b>16. DÍAS DE PERMANENCIA</b> - <i>STAYING DAYS</i></label>
+                        <input type="text" name="18_PERMANENCIA" value="7" />
+                    </div>
+                    <div class="col-6 text-center">
+                        <p><b>SELLO DE ENTRADA</b> - <i>ENTRY STAMP</i></p>
+                    </div>
+                    <div class="col-6  text-center">
+                        <p><b>SELLO DE SALIDA</b> - <i>EXIT STAMP</i></p>
+                    </div>
+                </div>
+                <!-- <button id="btTarjetaFim" class="d-block mx-auto btn btn-secondary">Continuar</button> -->
+            </div>
+        </div>
+
+        <div class="dbv-container">
+            <div class="dbv-position">
+                <span class="d-block m-0 p-0" id="dbvAltura">
+
+                    <h1 id="page-title" class="documentFirstHeading">e-DBV - Declaração Eletrônica de Bens do Viajante
+                    </h1>
+                    <div class="border p-1">
+                        <p>Preencha corretamente a e-DBV do <em>tablet</em> de 1.500,00 dólares adquirido durante a
+                            viagem. Para preencher a declaração, você deve escolher a opção do menu inicial <b>Nova
+                                declaração</b>, dentro do item <b>Declaração de Entrada de Bens e Valores.</b></p>
+                    </div>
+                    <span id="edbv-g1">
+                        <fieldset id="" class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <h3>1 - Qual é a via de transporte?</h3>
+                                <table class="tabela-dbv radioViaTransporte" id="formPrincipal:radioViaTransporte">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="viaTransporte" value="AEREO"
+                                                    onclick="exibeProximo('reside')"><label
+                                                    for="formPrincipal:radioViaTransporte:0"
+                                                    class="selectOneRadioEnabled"> Aéreo</label>
+                                            </td>
+                                            <td>
+                                                <input onclick="alternativaErrada(this)" type="radio"
+                                                    name="viaTransporte" value="FLUVIAL"><label
+                                                    for="formPrincipal:radioViaTransporte:1"
+                                                    class="selectOneRadioEnabled"> Fluvial</label>
+                                            </td>
+                                            <td>
+                                                <input onclick="alternativaErrada(this)" type="radio"
+                                                    name="viaTransporte" value="LACUSTRE"><label
+                                                    for="formPrincipal:radioViaTransporte:2"
+                                                    class="selectOneRadioEnabled"> Lacustre</label>
+                                            </td>
+                                            <td>
+                                                <input onclick="alternativaErrada(this)" type="radio"
+                                                    name="viaTransporte" value="MARITIMA"><label
+                                                    for="formPrincipal:radioViaTransporte:3"
+                                                    class="selectOneRadioEnabled"> Marítimo</label>
+                                            </td>
+                                            <td>
+                                                <input onclick="alternativaErrada(this)" type="radio"
+                                                    name="viaTransporte" value="TERRESTRE"><label
+                                                    for="formPrincipal:radioViaTransporte:4"
+                                                    class="selectOneRadioEnabled"> Terrestre </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="reside"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <h3>2 - Em que país o(a) Sr(a). reside?</h3>
+                                <table class="tabela-dbv" id="formPrincipal:radioViaTransporte">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio"
+                                                    onclick="exibeProximo('panelBensOrigemAnimalOuVegetal')"
+                                                    name="formPrincipal:radioResidencia"
+                                                    id="formPrincipal:radioResidencia:0" value="BRASIL"><label
+                                                    for="formPrincipal:radioResidencia:0" class="selectOneRadioEnabled">
+                                                    Brasil</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:radioResidencia"
+                                                    id="formPrincipal:radioResidencia:1" value="OUTRO_PAIS"><label
+                                                    for="formPrincipal:radioResidencia:1" class="selectOneRadioEnabled">
+                                                    Outro País</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelBensOrigemAnimalOuVegetal"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>3 - Está trazendo animais, vegetais, ou suas partes, produtos de
+                                                    origem animal ou vegetal,
+                                                    inclusive?</h3>
+                                            </td>
+                                            <td style="width: 5%; padding:0px; margin:0px; vertical-align: top;"><a
+                                                    id="formPrincipal:j_idt212" href="#"
+                                                    class="ui-commandlink ui-widget iconeHelp"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5>Como produto similar entenda partes, sementes, produtos veterinários ou agrotóxicos.
+                                </h5>
+                                <table id="formPrincipal:comboBensOrigemAnimalOuVegetal" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:comboBensOrigemAnimalOuVegetal"
+                                                    value="SIM"><label class="selectOneRadioEnabled">
+                                                    Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio"
+                                                    onclick="exibeProximo('panelVisitacaoAreasAgricolas')"
+                                                    name="formPrincipal:comboBensOrigemAnimalOuVegetal"
+                                                    value="NAO"><label class="selectOneRadioEnabled">
+                                                    Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelVisitacaoAreasAgricolas"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr style="">
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>4 - Visitou áreas de produção agrícola ou pecuária nos últimos 15
+                                                    dias?</h3>
+                                            </td>
+                                            <td style="width: 5%; padding:0px; margin:0px; vertical-align: top;">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table id="formPrincipal:comboVisitacaoAreasAgricolas" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:comboVisitacaoAreasAgricolas"
+                                                    id="formPrincipal:comboVisitacaoAreasAgricolas:0" value="SIM"><label
+                                                    class="selectOneRadioEnabled">
+                                                    Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="exibeProximo('panelProdutosMedicos')"
+                                                    name="formPrincipal:comboVisitacaoAreasAgricolas"
+                                                    id="formPrincipal:comboVisitacaoAreasAgricolas:1" value="NAO"><label
+                                                    class="selectOneRadioEnabled">
+                                                    Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelProdutosMedicos"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr style="">
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>5 - Está trazendo em sua bagagem produtos médicos e medicamentos,
+                                                    exceto os de uso pessoal
+                                                    que forem necessários durante sua viagem?</h3>
+                                            </td>
+                                            <td style="width: 5%; padding:0px; margin:0px; vertical-align: top;"><a
+                                                    id="formPrincipal:j_idt345" href="#"
+                                                    class="ui-commandlink ui-widget iconeHelp"
+                                                    onclick="EDBVUtils.exibirModal(modalHelpProdutosMedicos);PrimeFaces.ab({source:'formPrincipal:j_idt345'});return false;"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5>Como produtos médicos entenda como os equipamentos, inclusive destinados à estética,
+                                    instrumentais, os
+                                    produtos para diagnóstico in vitro, produtos para limpeza, materiais biológicos,
+                                    inclusive os de uso
+                                    odontológico. Nesta categoria também incluem-se as vitaminas e suplementos
+                                    alimentares. Exceto os
+                                    medicamentos de uso pessoal que foram necessários durante a sua viagem.</h5>
+                                <table id="formPrincipal:comboProdutosMedicos" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:comboProdutosMedicos"
+                                                    id="formPrincipal:comboProdutosMedicos:0" value="SIM"><label
+                                                    for="formPrincipal:comboProdutosMedicos:0"
+                                                    class="selectOneRadioEnabled"> Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="exibeProximo('panelArmas')"
+                                                    name="formPrincipal:comboProdutosMedicos"
+                                                    id="formPrincipal:comboProdutosMedicos:1" value="NAO"><label
+                                                    for="formPrincipal:comboProdutosMedicos:1"
+                                                    class="selectOneRadioEnabled"> Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelArmas"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr style="">
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>6 - Está trazendo em sua bagagem armas ou munições?</h3>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5>São também considerados como armas as réplicas, os simulacros e aqueles que possam
+                                    ser confundidos como armas, mesmo sendo de brinquedo ou esportivo. Além das partes e
+                                    peças para armamento e aparelhos para recarga.</h5>
+                                <table id="formPrincipal:comboArmas" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:comboArmas" id="formPrincipal:comboArmas:0"
+                                                    value="SIM"><label for="formPrincipal:comboArmas:0"
+                                                    class="selectOneRadioEnabled">
+                                                    Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="exibeProximo('panelPJ')"
+                                                    name="formPrincipal:comboArmas" id="formPrincipal:comboArmas:1"
+                                                    value="NAO"><label for="formPrincipal:comboArmas:1"
+                                                    class="selectOneRadioEnabled"> Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelPJ"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr style="">
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>7 - Está trazendo em sua bagagem produtos para fins comerciais ou
+                                                    industriais ou bens para uso ou consumo de pessoa jurídica
+                                                    determinada?</h3>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5>Também são considerados como produto de uso comercial ou industrial os protótipos,
+                                    produtos para teste, bens de propriedade de empresas ou qualquer outro bem que não
+                                    seja de uso pessoal. As pessoas físicas somente podem importar mercadorias para uso
+                                    próprio.</h5>
+                                <table id="formPrincipal:comboPj" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:comboPj" id="formPrincipal:comboPj:0"
+                                                    value="SIM"><label for="formPrincipal:comboPj:0"
+                                                    class="selectOneRadioEnabled">
+                                                    Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="exibeProximo('panelVeiculo')"
+                                                    name="formPrincipal:comboPj" id="formPrincipal:comboPj:1"
+                                                    value="NAO"><label for="formPrincipal:comboPj:1"
+                                                    class="selectOneRadioEnabled"> Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelVeiculo"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr style="">
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>8 - Está trazendo em sua bagagem veículos motorizados ou partes e
+                                                    peças para veículos (inclusive pneus)?</h3>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5>Automóveis, motocicletas, motonetas, bicicletas com motor, casas rodantes (motor
+                                    homes) e demais veículos automotores terrestres, aeronaves, embarcações de todo o
+                                    tipo, motos aquáticas e similares, e motores para embarcações, suas partes e peças.
+                                </h5>
+                                <table id="formPrincipal:comboVeiculo" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:comboVeiculo" id="formPrincipal:comboVeiculo:0"
+                                                    value="SIM"><label for="formPrincipal:comboVeiculo:0"
+                                                    class="selectOneRadioEnabled">
+                                                    Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="exibeProximo('panelDinheiro')"
+                                                    name="formPrincipal:comboVeiculo" id="formPrincipal:comboVeiculo:1"
+                                                    value="NAO"><label for="formPrincipal:comboVeiculo:1"
+                                                    class="selectOneRadioEnabled"> Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelDinheiro"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr style="">
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>9 - O(A) Sr(a). está portando ou transportando em sua bagagem
+                                                    dinheiro em espécie, em valores superiores ao equivalente a R$
+                                                    10.000,00?</h3>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5>O viajante que portar valores em espécie superiores a R$ 10.000,00 ou o equivalente
+                                    em outras moedas, deverá preencher a e-DBV e apresentar-se à fiscalização aduaneira
+                                    para validação.</h5>
+                                <table id="formPrincipal:comboDinheiro" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:comboDinheiro"
+                                                    id="formPrincipal:comboDinheiro:0" value="SIM"><label
+                                                    for="formPrincipal:comboDinheiro:0" class="selectOneRadioEnabled">
+                                                    Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="exibeProximo('panelIngressou')"
+                                                    name="formPrincipal:comboDinheiro"
+                                                    id="formPrincipal:comboDinheiro:1" value="NAO"><label
+                                                    for="formPrincipal:comboDinheiro:1" class="selectOneRadioEnabled">
+                                                    Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelIngressou"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr style="">
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>10 - Ingressou no Brasil no último intervalo de 1 (um) mês ou é
+                                                    tripulante do veículo?
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table id="formPrincipal:comboIngressou" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="alternativaErrada(this)"
+                                                    name="formPrincipal:comboIngressou"
+                                                    id="formPrincipal:comboIngressou:0" value="SIM"><label
+                                                    for="formPrincipal:comboIngressou:0" class="selectOneRadioEnabled">
+                                                    Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="exibeProximo('panelEletronico')"
+                                                    name="formPrincipal:comboIngressou"
+                                                    id="formPrincipal:comboIngressou:1" value="NAO"><label
+                                                    for="formPrincipal:comboIngressou:1" class="selectOneRadioEnabled">
+                                                    Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="display: none;" id="panelEletronico"
+                            class="ui-fieldset ui-widget ui-widget-content ui-corner-all">
+                            <div class="ui-fieldset-content">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr style="">
+                                            <td style="width: 95%; padding:0px; margin:0px;">
+                                                <h3>11 - Está trazendo em sua bagagem outros bens adquiridos no exterior
+                                                    no valor total superior ao limite de isenção e/ou acima do limite
+                                                    quantitativo? (Consulte Ajuda)
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5>As pessoas físicas somente podem importar mercadorias para uso próprio.</h5>
+                                <h5>O(A) Sr(a). também deverá responder "sim" à pergunta caso deseje obter documentação
+                                    comprobatória de regular entrada de bens no País, mesmo abaixo do limite de isenção.
+                                </h5>
+                                <table id="formPrincipal:comboEletronico" class="tabela-dbv">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" onclick="validaUltimaResposta(1)"
+                                                    name="formPrincipal:comboEletronico"
+                                                    id="formPrincipal:comboEletronico:0" value="SIM"><label
+                                                    for="formPrincipal:comboEletronico:0" class="selectOneRadioEnabled">
+                                                    Sim</label>
+                                            </td>
+                                            <td>
+                                                <input type="radio" onclick="validaUltimaResposta(0)"
+                                                    name="formPrincipal:comboEletronico"
+                                                    id="formPrincipal:comboEletronico:1" value="NAO"><label
+                                                    for="formPrincipal:comboEletronico:1" class="selectOneRadioEnabled">
+                                                    Não</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </fieldset>
+                    </span>
+
+                    <fieldset id="declaracao-conteudo" class="ui-fieldset ui-widget ui-widget-content ui-corner-all"
+                        style="display: none;">
+                        <div class="tooltip tooltip-3">
+
+                        </div>
+                        <div class="ui-fieldset-content">
+                            <div class="formulario">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <table style="width: 100%;" class="tabela-tablet">
+                                            <thead>
+                                                <tr>
+                                                    <td>Grupo</td>
+                                                    <td>Subgrupo</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select class="form-control" id="grupo">
+                                                            <option value="">Selecione</option>
+                                                            <option selected="selected" value="eletronicos">Eletrônicos
+                                                            </option>
+                                                            <option value="">Bebidas Alcoólicas</option>
+                                                            <option value="">Artigos Esportivos</option>
+                                                            <option value="">Vestuário</option>
+                                                            <option value="">Brinquedo e Lazer</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control" id="subgrupo">
+                                                            <option value="">Selecione</option>
+                                                            <option selected="selected" value="tablet">Tablet</option>
+                                                            <option value="">Computador Portátil</option>
+                                                            <option value="">Impressora</option>
+                                                            <option value="">Televisão</option>
+                                                            <option value="">Celulares</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table style="width: 100%;" class="tabela-tablet">
+                                            <thead>
+                                                <tr>
+                                                    <td>Marca</td>
+                                                    <td>Modelo</td>
+                                                    <td>Número de Série</td>
+                                                    <td>Quantidade</td>
+                                                    <td>Moeda</td>
+                                                    <td>Valor Unitário</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="text" class="form-control" id="marca"
+                                                            value="XXXXX">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" id="modelo"
+                                                            value="XXXX">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" id="numeroSerie"
+                                                            value="13452">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" id="quantidade"
+                                                            value="1">
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control" id="moeda">
+                                                            <option selected="selected" value="dolar">DOLAR DOS EUA
+                                                            </option>
+                                                            <option value="">EURO</option>
+                                                            <option value="">PESO ARGENTINO</option>
+                                                            <option value="">LIBRA</option>
+                                                            <option value="">REAL</option>
+                                                        </select>
+                                                        <input type="hidden" class="form-control" id="moedahidden"
+                                                            value="DOLAR DOS EUA">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" id="valor"
+                                                            value="1.500,00">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <button id="incluir">Incluir</button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset id="dados-pessoa" class="ui-fieldset ui-widget ui-widget-content ui-corner-all"
+                        style="display: none;">
+                        <div class="tooltip tooltip-4">
+
+                        </div>
+                        <div class="ui-fieldset-content">
+                            <div class="formulario">
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <label>Nome completo</label>
+                                        <input type="text" class="form-control " id="nome-completo"
+                                            value="João dos Santos Silva">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label>Data nascimento (dd/mm/aaaa)</label>
+                                        <input type="date" class="form-control" id="data-nascimento" value="1990-03-25">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <label>Cpf</label>
+                                        <input type="text" class="form-control" id="cpf" value="000.000.000-00">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label>Telefone</label>
+                                        <input type="text" class="form-control" id="telefone" value="(11) 99778899">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <label>Tipo de documento de identificação</label>
+                                        <input type="text" class="form-control" id="tipo-documento"
+                                            value="Identidade - RG">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label>Número do Documento de Identificação</label>
+                                        <input type="text" class="form-control" id="numero-documento"
+                                            value="0000000000000" readonly>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label>País emissor</label>
+                                        <input type="text" class="form-control" id="pais-emissor" value="Brasil">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <label>País de residência</label>
+                                        <select class="form-control" name="" id="pais-residencia" readonly>
+                                            <option value="1" selected>Brasil</option>
+                                        </select>
+                                        <input type="hidden" name="" value="Brasil">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <label>Cia aérea ou de transporte</label>
+                                        <input type="text" class="form-control " id="cia-aerea" value="Companhia Aérea">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label>Número do voo </label>
+                                        <input type="text" class="form-control" id="numero-voo" value="11254350">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label>Data de Chegada (dd/mm/aaaa)</label>
+                                        <input type="date" class="form-control" id="data-chegada" value="2025-03-05">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-5">
+                                        <label>País de embarque</label>
+                                        <select class="form-control" id="paises-embarque">
+                                            <option value="1">Argentina</option>
+                                            <option value="2" selected="selected">Bolívia</option>
+                                            <option value="3">Brasil</option>
+                                            <option value="4">Chile</option>
+                                            <option value="5">Colômbia</option>
+                                            <option value="6">Equador</option>
+                                            <option value="7">Guiana</option>
+                                            <option value="8">Guiana Francesa</option>
+                                            <option value="9">Paraguai</option>
+                                            <option value="10">Peru</option>
+                                            <option value="11">Suriname</option>
+                                            <option value="12">Uruguai</option>
+                                            <option value="13">Venezuela</option>
+                                        </select>
+                                        <input type="hidden" value="" id="paises-embarque-hidden">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label>Local chegada</label>
+                                        <select class="form-control" id="local-chegada">
+                                            <option value="rj" selected="selected">Rio de Janeiro</option>
+                                        </select>
+                                        <input type="hidden" value="Rio de Janeiro">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label>Países que foram visitados em sua viagem</label>
+
+
+                                        <div id="pickList">
+                                            <input type="checkbox" name="argentina" id="">
+                                            <label for="argentina">Argentina</label>
+                                            <input type="checkbox" name="bolivia" checked="checked">
+                                            <label for="bolivia">Bolivia</label>
+                                            <input type="checkbox" name="chile" id="">
+                                            <label for="chile">Chile</label>
+                                            <input type="checkbox" name="paraguai" id="">
+                                            <label for="paraguai">Paraguai</label>
+                                            <input type="checkbox" name="uruguai" id="">
+                                            <label for="uruguai">Uruguai</label>
+                                            <input type="checkbox" name="colombia" id="">
+                                            <label for="colombia">Colômbia</label>
+                                            <input type="checkbox" name="equador" id="">
+                                            <label for="equador">Equador</label>
+                                        </div>
+                                        <input type="hidden" name="Bolívia" id="paises-visitados">
+
+                                    </div>
+                                </div>
+                                <button id="finalizar">Avançar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset id="tabela-desc-conteudo" class="ui-fieldset ui-widget ui-widget-content ui-corner-all"
+                        style="display: none;">
+                        <div class="tooltip tooltip-5"></div>
+                        <div class="ui-fieldset-content">
+                            <h2>Relação de bens
+                            </h2>
+                            <div class="formulario">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <table style="width: 100%;" class="tabela-tablet">
+                                            <thead>
+                                                <tr>
+                                                    <td>Subgrupo</td>
+                                                    <td>Descrição do bem</td>
+                                                    <td>Quantidade</td>
+                                                    <td>Valor Unitário</td>
+                                                    <td>Moeda</td>
+                                                    <td>Valor na moeda</td>
+                                                    <td>Valor em dolar</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td id="sub-grupo">
+
+                                                    </td>
+                                                    <td id="desc-bem">
+
+                                                    </td>
+                                                    <td id="quantidade-target">
+
+                                                    </td>
+                                                    <td id="valor-unitario">
+
+                                                    </td>
+                                                    <td id="moeda-target">
+
+                                                    </td>
+                                                    <td id="valor1">
+
+                                                    </td>
+                                                    <td id="valor2">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-fieldset-content">
+                            <h2>Imposto de importação
+                            </h2>
+                            <h3>Sobre o valor dos artigos adquiridos no exterior e considerados como bagagem incide-se o
+                                imposto de Importação na alíquota de 50% do valor excedente ao limite
+                                de isenção cujo pagamento precede a liberação dos bens. Não estão incluídos no cálculo
+                                artigos que exigem o cumprimento de formalidades específicas para liberação,
+                                impedindo o pagamento antecipado sobre estes itens.
+                            </h3>
+                            <div class="formulario">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p>Valor total dos bens selecionados: </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p>US$ 1.500,00</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p>Valor da Cota de isenção: </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p>US$ 1.000,00</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p>Valor tributável: </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p>US$ 500,00</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p>Cotação do dolar: </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p>R$ 5,3427</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p>Valor tributável em real: </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p>R$ 2.671,90</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p>Imposto de importação: </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p>R$ 1.335,95</p>
+                                    </div>
+                                </div>
+                                <button id="transmitir">
+                                    Transmitir
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="tabela-recibo" class="ui-fieldset ui-widget ui-widget-content ui-corner-all"
+                        style="display: none;">
+                        <div class="tooltip tooltip-6"></div>
+                        <div class="ui-fieldset-content">
+                            <img src="image/recibo.png" class="img-fluid">
+                            <button class="avancar" id="continuar-recibo">Continuar</button>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset id="tabela-nada-declarar" class="ui-fieldset ui-widget ui-widget-content ui-corner-all"
+                        style="display: none;">
+                        <div class="ui-fieldset-content">
+                            <p>Caso os passageiros não tenham itens a declarar, oriente-os a preencher a declaração e,
+                                ao fim, escolher a opção “Salvar e transmitir depois”, conforme imagem:</p>
+                            <img src="image/nada-declarar.png" class="img-fluid">
+                            <button class="avancar" id="continuar-nada-declarar">Continuar</button>
+                        </div>
+
+                    </fieldset>
+                </span>
+            </div>
+        </div>
+        <div class="infografico-container">
+            <div class="infografico-position">
+                <div class="header-infografico">Chegando no brasil</div>
+                <p>Ao chegar ao Brasil, durante o desembarque, os passageiros que têm bens a declarar deverão seguir as
+                    placas indicativas no aeroporto. Os que não têm bens a declarar podem seguir para o desembarque,
+                    conforme exemplo:</p>
+                <div class="img-infografico">
+                    <img src="image/infografico.png" class="img-fluid">
+                </div>
+            </div>
+            <button class="btn-continuar" id="finaliza-infografico">
+                CONTINUAR
+            </button>
+        </div>
+        <div class="modal-feedback-dbv erro-tablet">
+            <img src="image/ico_erro.png" alt="">
+            <p>Lembre-se de que você adquiriu durante a viagem um <em>tablet</em> no valor de 1.500,00 dólares. Você
+                deverá preencher este campo com o registro da compra.</p>
+            <button>OK</button>
+        </div>
+        <div class="modal-feedback-dbv erro-tablet-2">
+            <img src="image/ico_erro.png" alt="">
+            <p>Ops! Alguma informação sobre o produto importado está errada. Preencha corretamente o formulário.</p>
+            <button>OK</button>
+        </div>
+        <div class="modal-feedback-dbv edbv-correto">
+            <img src="image/ico_acerto.png" alt="">
+            <p>Parabéns! Você preencheu corretamente os campos da e-DBV. Lembre-se de se atualizar sobre os bens de uso
+                pessoal durante a viagem, as cotas, os limites quantitativos e as restrições de produtos que podem ser
+                adquiridos durante as viagens internacionais.</p>
+            <button>OK</button>
+        </div>
+        <div class="modal-feedback-dbv modal-erro-form">
+            <img src="image/ico_erro.png" alt="">
+            <p>Preencha todas as informações no formulário para continuar.</p>
+            <button>OK</button>
+        </div>
+        <div class="tooltip-msg tooltip-msg-1">
+            <p>Aqui, você deve inserir os dados pessoais de quem está importando o produto. Insira o nome,
+                nacionalidade, data e local de nascimento, além das informações sobre ocupação e documentos
+                pessoais.</p>
+            <button>Continuar</button>
+        </div>
+        <div class="tooltip-msg tooltip-msg-2">
+            <p>Aqui, você deve inserir os dados relativos à viagem como o local de saída e entrada no país,
+                o tipo de transporte utilizado, tempo de permanência no país, tipo de visa utilizado, etc.
+            </p>
+            <button>Continuar</button>
+        </div>
+        <div class="tooltip-msg tooltip-msg-3">
+            <p>Depois de responder ao questionário referente à declaração eletrônica de bens, você deve preencher as
+                informações sobre o produto importado. Para corretamente declarar a importação de um tablet, selecione o
+                seu grupo (eletrônicos) e subgrupo (tablet), e depois preencha os dados de marca, modelo, número de
+                série, quantidade, valor e moeda utilizada na transação.</p>
+            <button>Continuar</button>
+        </div>
+        <div class="tooltip-msg tooltip-msg-4">
+            <p>A seguir, você precisa preencher os seus dados pessoais e informações referentes à
+                viagem, como a cia. aérea utilizada, número do vôo, país de embarque, local de
+                chegada e países que foram visitados.</p>
+            <!-- <p>Nesta etapa, deve-se preencher dados pessoais do importador como nome completo, data de nascimento e
+                informações sobre o documento de identificação utilizado, além de informações sobre a viagem, como a
+                companhia aérea e número do vôo, país de embarque e quais países foram visitados durante a viagem.</p> -->
+            <button>Continuar</button>
+        </div>
+        <div class="tooltip-msg tooltip-msg-5">
+            <p>Nesta etapa, você pode checar a relação de bens importados e informações sobre os impostos de importação.
+            </p>
+            <button>Continuar</button>
+        </div>
+        <div class="tooltip-msg tooltip-msg-6">
+            <p>A seguir, você receberá o recibo da transmissão do imposto de importação.</p>
+            <button>Continuar</button>
+        </div>
+    </div>
+
+    <script src="assets/index.js">window.mostraModal = function (target){
+      mostraModal(target)
+    }</script>
 </body>
 
 </html>
